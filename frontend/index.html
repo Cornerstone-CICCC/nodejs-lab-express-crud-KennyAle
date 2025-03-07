@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+</head>
+
+<body>
+    <h1>Employees</h1>
+    <h2>List of Employees</h2>
+    <ul id="employees-list">
+    </ul>
+    <form action="get" name="search-employee" id="search-employee">
+        <input type="text" id="search-query" placeholder="Enter First Name">
+        <input type="submit" value="Search And View Employees">
+    </form>
+    <h2>Add Employee</h2>
+    <form method="post" name="add-employee" id="add-employee">
+        <input type="text" placeholder="First Name" id="add-first-name" name="first-name" required>
+        <input type="text" placeholder="Last Name" id="add-last-name" name="last-name" required>
+        <input type="text" placeholder="age" id="add-age" name="age" required>
+        <label for="married"> Married?</label>
+        <input type="checkbox" name="married" id="add-married">
+        <input type="submit" id="add-employee" value="Add Employee">
+    </form>
+    <h2>Edit Employee</h2>
+    <form method="put" name="edit-employee" id="edit-employee">
+        <input type="text" placeholder="First Name" id="edit-first-name" name="first-name">
+        <input type="text" placeholder="Last Name" id="edit-last-name" name="last-name">
+        <input type="text" placeholder="age" id="edit-age" name="age">
+        <label for="married"> Married?</label>
+        <input type="checkbox" name="married" id="edit-married">
+        <input type="submit" id="edit-employee" value="Edit Employee">
+    </form>
+    <h2>View Employee's Info</h2>
+    <ul id="employee-info">
+        <li>First Name:</li>
+        <li>Last Name:</li>
+        <li>Age:</li>
+        <li>Married:</li>
+    </ul>
+    <script src="app.js"></script>
+</body>
+
+</html>
